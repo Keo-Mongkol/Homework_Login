@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Forgot Password clicked", Toast.LENGTH_SHORT).show()
         );
 
+        findViewById(R.id.registerLink).setOnClickListener(v -> finish());
+
         findViewById(R.id.btnGoogle).setOnClickListener(v ->
                 Toast.makeText(this, "Google Sign-In clicked", Toast.LENGTH_SHORT).show()
         );

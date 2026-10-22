@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/pageRegisterActivity">
+
+    <action
+        android:id="@+id/action_global_mainActivity"
+        app:destination="@id/mainActivity" />
+
+    <action
+        android:id="@+id/action_global_pageRegisterActivity"
+        app:destination="@id/pageRegisterActivity" />
+
+    <fragment
+        android:id="@+id/homeMenu"
+        android:name="com.Step1.app1.HomeMenu"
+        android:label="fragment_home_menu"
+        tools:layout="@layout/fragment_home_menu">
+        <action
+            android:id="@+id/action_homeMenu_to_pageRegisterActivity"
+            app:destination="@id/pageRegisterActivity" />
+        <action
+            android:id="@+id/action_homeMenu_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+
+    <activity
+        android:id="@+id/pageRegisterActivity"
+        android:name="com.Step1.app1.PageRegisterActivity"
+        android:label="page_register"
+        tools:layout="@layout/page_register" />
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.Step1.app1.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+
+</navigation>

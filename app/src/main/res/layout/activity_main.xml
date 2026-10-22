@@ -125,6 +125,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnlogin" />
 
+    <TextView
+        android:id="@+id/registerLink"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/dont_have_account"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/forgotPassword" />
+
     <LinearLayout
         android:id="@+id/dividerRow"
         android:layout_width="0dp"
@@ -136,7 +154,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/forgotPassword">
+        app:layout_constraintTop_toBottomOf="@id/registerLink">
 
         <View
             android:layout_width="0dp"
@@ -174,51 +192,48 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnGoogle"
-            style="@style/Widget.Material3.Button.OutlinedButton"
             android:layout_width="56dp"
             android:layout_height="56dp"
             android:layout_marginHorizontal="10dp"
+            android:background="@drawable/bg_social_circle"
             android:contentDescription="@string/google"
             android:padding="12dp"
-            app:cornerRadius="28dp"
+            app:backgroundTint="@null"
             app:icon="@drawable/google"
             app:iconGravity="textStart"
             app:iconPadding="0dp"
             app:iconSize="28dp"
-            app:iconTint="@null"
-            app:strokeColor="#33FFFFFF" />
+            app:iconTint="@null" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnFacebook"
-            style="@style/Widget.Material3.Button.OutlinedButton"
             android:layout_width="56dp"
             android:layout_height="56dp"
             android:layout_marginHorizontal="10dp"
+            android:background="@drawable/bg_social_circle"
             android:contentDescription="@string/facebook"
             android:padding="12dp"
-            app:cornerRadius="28dp"
+            app:backgroundTint="@null"
             app:icon="@drawable/facebook"
             app:iconGravity="textStart"
             app:iconPadding="0dp"
             app:iconSize="28dp"
-            app:iconTint="@null"
-            app:strokeColor="#33FFFFFF" />
+            app:iconTint="@null" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnGithub"
-            style="@style/Widget.Material3.Button.OutlinedButton"
             android:layout_width="56dp"
             android:layout_height="56dp"
             android:layout_marginHorizontal="10dp"
+            android:background="@drawable/bg_social_circle"
             android:contentDescription="@string/github"
             android:padding="12dp"
-            app:cornerRadius="28dp"
+            app:backgroundTint="@null"
             app:icon="@drawable/github"
             app:iconGravity="textStart"
             app:iconPadding="0dp"
             app:iconSize="28dp"
-            app:iconTint="@null"
-            app:strokeColor="#33FFFFFF" />
+            app:iconTint="@null" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
